@@ -1,14 +1,19 @@
 body {
   font-family: sans-serif;
+  margin: 20px;
+}
+h1 {
+  font-size: 2em;
 }
 img {
   /* filter: grayscale(100%); */
   -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
   filter: blur(5px);
+  width: 13em;
 }
 .pokedex_container {
-  background: linear-gradient(65deg, #ecb0b0 0%, #861d1d 100%);
-  width: 25em;
+  background: linear-gradient(35deg, #ecb0b0 0%, #861d1d 100%);
+  width: 30em;
   padding: 5px;
   border-width: 4px;
   border-style: ridge;
@@ -51,4 +56,11 @@ img {
   border-radius: 3px;
   border-spacing: 20%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.guess {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  margin: 3px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
