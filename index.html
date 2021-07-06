@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <title>Pokemon!</title>
+    <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <div class = "pokemon">
-          
+      <div>
+        <div class="pokemon"></div>
+        <div class="guess">
+          <label for="name">Enter Pokémon Name:</label>
+          <input type="text" id="userGuess" name="name" required
+            minlength="1" maxlength="100" size="10">
+          <button onclick="myFunction()">Submit</button>
+        </div>
+        <script src="main.js"></script>
       </div>
-      <script src = "main.js"></script>
   </body>
 </html>
