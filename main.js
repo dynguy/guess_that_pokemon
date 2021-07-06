@@ -31,7 +31,10 @@ const userGuessing = () => {
   .then((pokemon) => {
     if (movieInput.toLowerCase() === pokemon.name){
       console.log("correct")
-      const html = `<button onclick="window.location.reload()">Next Pokémon</button>`
+      const html = `
+      <p>Correct!</p>
+      <button onclick="window.location.reload()">Next Pokémon</button>
+      `
       const pokemonDiv = document.querySelector(".result");
       pokemonDiv.innerHTML = html;
     }
