@@ -9,7 +9,7 @@ img {
   /* filter: grayscale(100%); */
   -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
   filter: blur(5px);
-  width: 13em;
+  width: 12em;
 }
 .pokedex_container {
   background: linear-gradient(35deg, #ecb0b0 0%, #912f2f 100%);
@@ -36,7 +36,7 @@ img {
   border-radius: 3px;
   border-spacing: 20%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 18em;
+  width: 10.5em;
 }
 .details_box {
   display: flex;
