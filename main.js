@@ -13,8 +13,6 @@ fetch(apiUrl)
   .then((data) => data.json())
   .then((pokemon) => generateHtml(pokemon));
 
-
-
 const pokemon_typings = (data) => {
   if (data.types.length == 1) {
     return data.types[0].type.name;
@@ -24,27 +22,26 @@ const pokemon_typings = (data) => {
 };
 
 const userGuessing = () => {
-  let movieInput = document.getElementById("userGuess").value;;
+  let movieInput = document.getElementById("userGuess").value;
   // console.log(movieInput.toLowerCase());
   fetch(apiUrl)
-  .then((data) => data.json())
-  .then((pokemon) => {
-    if (movieInput.toLowerCase() === pokemon.name){
-      console.log("correct")
-      const html = `
+    .then((data) => data.json())
+    .then((pokemon) => {
+      if (movieInput.toLowerCase() === pokemon.name) {
+        console.log("correct");
+        const html = `
       <p>Correct!</p>
       <button onclick="window.location.reload()">Next Pokémon</button>
-      `
-      const pokemonDiv = document.querySelector(".result");
-      pokemonDiv.innerHTML = html;
-    }
-    else{
-      console.log("incorrect")
-      const html = `<p>Incorrect! Try again!</p>`
-      const pokemonDiv = document.querySelector(".result");
-      pokemonDiv.innerHTML = html;
-    }
-  });
+      `;
+        const pokemonDiv = document.querySelector(".result");
+        pokemonDiv.innerHTML = html;
+      } else {
+        console.log("incorrect");
+        const html = `<p>Incorrect! Try again!</p>`;
+        const pokemonDiv = document.querySelector(".result");
+        pokemonDiv.innerHTML = html;
+      }
+    });
 };
 
 const generateHtml = (data) => {
