@@ -1,7 +1,7 @@
 let apiData = {
   url: "https://pokeapi.co/api/v2/",
   type: "pokemon",
-  id: Math.floor(Math.random() * 152).toString(),
+  id: Math.floor(Math.random() * 386).toString(),
 };
 
 // destructuring
